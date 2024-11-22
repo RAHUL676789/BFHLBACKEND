@@ -28,7 +28,7 @@ const isPrime = (num) => {
 // Process POST Request
 const processPostRequest = async (data) => {
     const { full_name, dob, input, file_base64 } = data;
-
+    console.log(full_name,dob,input)
     if (!full_name || !dob || !input || !Array.isArray(input)) {
         return { is_success: false, message: 'Invalid Input' };
     }
