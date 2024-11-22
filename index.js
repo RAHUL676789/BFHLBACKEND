@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const bfhlRoutes = require('./routes/bfhl');
+const bfhlRoutes = require('./Routes/bfhl.js');
 const cors = require("cors");
 
 const app = express();
