@@ -16,7 +16,7 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 // Routes
-app.use('/bfhl', bfhlRoutes);
+app.use('/', bfhlRoutes);
 
 // Server Listener
 const PORT = process.env.PORT || 8080;
