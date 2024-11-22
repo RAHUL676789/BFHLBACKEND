@@ -8,15 +8,15 @@ if(process.env.NODE_ENV != "production"){
 
 const app = express();
 
-const corsOptions = {
-  origin: [
-    "https://bajajfrontendassignment.netlify.app/", // Frontend Netlify domain
-  ],
-  methods: 'GET,POST,PUT,DELETE',
-  allowedHeaders: 'Content-Type,Authorization',
-};
-app.use(cors(corsOptions));
-app.use(cors(corsOptions));
+// const corsOptions = {
+//   origin: [
+//     "https://bajajfrontendassignment.netlify.app/", // Frontend Netlify domain
+//   ],
+//   methods: 'GET,POST,PUT,DELETE',
+//   allowedHeaders: 'Content-Type,Authorization',
+// };
+app.use(cors());
+
 app.options('*', cors(corsOptions)); 
 // Middleware
 app.use(bodyParser.json());
