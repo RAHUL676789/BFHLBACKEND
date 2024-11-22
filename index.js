@@ -7,7 +7,7 @@ const app = express();
 
 const corsOptions = {
   origin: [
-    "https://67408044d1097e916070b05a--profound-gingersnap-24916f.netlify.app", // Frontend Netlify domain
+    "https://bajajfrontendassignment.netlify.app/", // Frontend Netlify domain
   ],
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type,Authorization',
