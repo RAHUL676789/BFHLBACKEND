@@ -2,7 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const bfhlRoutes = require('./Routes/bfhl.js');
 const cors = require("cors");
-require('dotenv').config();
+if(process.env.NODE_ENV != "production"){
+  require("dotenv").config();
+}
 
 const app = express();
 
